@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif; /* Matches X's sans-serif font */
+}
+.logo {
+    max-width: 400px; /* Make it large for the left half */
+    width: 100%;
+    height: auto;
+    /*filter: brightness(0) invert(1); White logo on black */
+}
+
+h1{
+    font-family: inherit;
+   
+}
+h3{
+    font-family: inherit;
+   
+}
+.btn-outline-light {
+    border-color: white;
+}
+.btn-outline-light:hover {
+    background-color: white;
+    color: black;
+}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .logo {
+        max-width: 200px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
