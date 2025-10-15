@@ -30,7 +30,7 @@ body {
 .twitter-logo {
     width: 28px;
     height: 28px;
-    fill: #1da1f2;
+    fill: #ffffff;
 }
 
 .header-title {
@@ -68,7 +68,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #1da1f2;
+    background-color: #ff9328;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,29 +84,34 @@ body {
     font-weight: 400;
 }
 
-/* Rating Stars */
 .rating-stars {
-    padding: 0 16px;
-    margin-bottom: 12px;
+  display: flex;
+  flex-direction: row-reverse; /* keeps hover logic correct */
+  justify-content: flex-end; 
+  padding-left: 14px;   /* keeps the group aligned to the left */
 }
 
 .rating-stars input {
-    display: none;
+  display: none;
 }
 
 .rating-stars label {
-    font-size: 20px;
-    color: #666666;
-    cursor: pointer;
-    transition: color 0.2s;
-    margin-right: 4px;
+  font-size: 24px;
+  color: #666666;
+  cursor: pointer;
+  transition: color 0.3s, text-shadow 0.3s;
+  margin: 0 2px;
 }
 
+/* Glow and fill effects */
 .rating-stars input:checked ~ label,
 .rating-stars label:hover,
 .rating-stars label:hover ~ label {
-    color: #ffd700;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
 }
+
+
 
 /* Textarea Container */
 .textarea-container {
@@ -148,8 +153,8 @@ body {
 }
 
 .tweet-button {
-    background-color: #1da1f2;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
     border-radius: 20px;
     padding: 8px 16px;
@@ -160,7 +165,7 @@ body {
 }
 
 .tweet-button:hover {
-    background-color: #1991db;
+    background-color: #b8b8b9;
 }
 
 .tweet-button:disabled {
@@ -232,12 +237,14 @@ body {
         padding-right: 12px;
     }
 
+
     .rating-stars,
     .textarea-container,
     .compose-actions {
         padding-left: 12px;
         padding-right: 12px;
     }
+ 
 
     .header-title {
         font-size: 18px;
