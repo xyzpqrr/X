@@ -17,16 +17,29 @@ It demonstrates a social media-like interface where users can post updates, comm
 
 ## 📁 Folder Structure
 
+## 📁 Folder Structure
+
+```plaintext
 xclone/
 │
-├── index.html # Home page (Feed + Post + Comments)
-├── login.html # Login form
-├── register.html # Registration form
-├── profile.html # Profile details + update form
-├── contact.html # Contact / feedback form
+├── index.html              # Home page (feed + tweet + comment forms)
+├── login.html              # Login form
+├── register.html           # Registration form
+├── profile.html            # Profile page (update bio, info)
+├── contact.html            # Contact or feedback form
 │
-├── style.css # Custom styles
-└── script.js # JavaScript logic for interactivity
+├── assets/                 # Folder for images, icons, or logos
+│   ├── logo.png
+│   ├── user-avatar.png
+│   └── bg.jpg
+│
+├── css/
+│   └── style.css           # Custom styling for all pages
+│
+├── js/
+│   └── script.js           # JavaScript logic for interactivity
+│
+├── README.md               # Project documentation
 
 
 ---
