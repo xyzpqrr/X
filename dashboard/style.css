@@ -66,6 +66,27 @@ body {
   background-color: #d5d5d5;
 }
 
+.rand {
+    margin: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-weight: 100;
+    font-family: Arial, sans-serif;
+}
+
+.rand a {
+    font-size: 12px;
+    color: #b3b3b3;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.rand a:hover span {
+    color: #1db954;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
 /* Profile section */
 .profile-section {
   display: flex;
@@ -109,9 +130,11 @@ body {
   margin: 0px;
   padding: 15px;
 }
+
 /* Layout Wrapper */
 .main-content {
-  margin-left: 400px; /* Matches sidebar width */
+  margin-left: 400px;
+  /* Matches sidebar width */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -242,11 +265,13 @@ body {
   flex: 1;
   padding: 10px 20px;
   background-color: #000;
-  margin-top: 195px; /* Adjusted to account for fixed post-box height */
+  margin-top: 195px;
+  /* Adjusted to account for fixed post-box height */
 }
 
 .feed::-webkit-scrollbar {
-  width: 0; /* Hide scrollbar */
+  width: 0;
+  /* Hide scrollbar */
 }
 
 .post-card {
