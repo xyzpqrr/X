@@ -63,7 +63,7 @@ Since there’s **no backend routing**, navigation uses simple HTML links (`<a h
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/xclone.git
+   git clone https://github.com/xyzpqrr/X.git
 
 2. Open the folder:
     cd xclone
