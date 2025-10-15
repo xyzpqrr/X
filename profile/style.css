@@ -1,0 +1,408 @@
+* {
+  background-color: black;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Sidebar container */
+.sidebar {
+  width: 33%;
+  max-width: 400px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #000;
+  padding: 20px 30px;
+  border-right: 1px solid darkgray;
+  color: white;
+}
+
+/* Nav links */
+.nav-link {
+  color: #e7e9ea !important;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 50px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none !important;
+}
+
+.nav-link:hover {
+  background-color: rgba(231, 233, 234, 0.1);
+  color: #fff !important;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+/* Post Button */
+.post-btn {
+  background-color: #e7e9ea;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+  padding: 14px;
+  border-radius: 50px;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.post-btn:hover {
+  background-color: #d5d5d5;
+}
+
+.rand {
+    margin: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-weight: 100;
+    font-family: Arial, sans-serif;
+}
+
+.rand a {
+    font-size: 12px;
+    color: #b3b3b3;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.rand a:hover span {
+    color: #1db954;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Profile section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.profile-section:hover {
+  background-color: rgba(231, 233, 234, 0.1);
+}
+
+.profile-pic {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #d33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
+.username {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.handle {
+  color: gray;
+  font-size: 0.9rem;
+  line-height: 1.1;
+}
+
+#mp {
+  margin: 0px;
+  padding: 15px;
+}
+
+/* Layout Wrapper */
+.main-content {
+  margin-left: 400px;
+  /* Matches sidebar width */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  border-right: 1px solid #333;
+}
+
+/* Top Bar */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 400px;
+  right: 0;
+  height: 60px;
+  background-color: #000;
+  border-bottom: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.tabs {
+  display: flex;
+  gap: 50px;
+}
+
+.tab {
+  color: #71767b;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.tab:hover {
+  color: #fff;
+}
+
+.tab.active {
+  color: #fff;
+  border-bottom: 4px solid #1d9bf0;
+}
+
+/* Post Box */
+.post-box {
+  position: fixed;
+  top: 60px;
+  left: 400px;
+  right: 0;
+  background-color: #000;
+  border-bottom: 1px solid #333;
+  padding: 15px 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 999;
+}
+
+.user-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #d33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.post-input {
+  flex: 1;
+}
+
+.post-input textarea {
+  width: 100%;
+  resize: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  outline: none;
+  min-height: 40px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.post-input textarea:focus {
+  border: 1px solid #1d9bf0;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  color: #1d9bf0;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.post-btn-sm {
+  background-color: #1d9bf0;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.post-btn-sm:hover {
+  background-color: #1a8cd8;
+}
+
+/* Feed Section */
+.feed {
+  width: 50vw;
+  flex: 1;
+  padding: 10px 20px;
+  background-color: #000;
+  margin-top: 195px;
+  /* Adjusted to account for fixed post-box height */
+}
+
+.feed::-webkit-scrollbar {
+  width: 0;
+  /* Hide scrollbar */
+}
+
+.post-card {
+  border-bottom: 1px solid #333;
+  padding: 15px 0;
+}
+
+.post-card h6 {
+  font-weight: 600;
+}
+
+.post-card p {
+  color: #e7e9ea;
+}
+
+/* Responsive Fix */
+@media (max-width: 992px) {
+  .main-content {
+    margin-left: 250px;
+  }
+
+  .topbar {
+    left: 250px;
+  }
+
+  .post-box {
+    left: 250px;
+  }
+}
+
+
+/* Responsive tweak */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 250px;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    gap: 15px;
+  }
+}
+
+
+/* -----------------------------------
+   Profile Page Styles (Lolplayer 69)
+----------------------------------- */
+.profile-page {
+  position: relative;
+  margin-top: 180px; /* below the fixed post box */
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+}
+
+.banner {
+  background-color: #2f3336;
+  height: 180px;
+  width: 100%;
+}
+
+.profile-pic-large {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #c23c0c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  border: 4px solid #000;
+  position: absolute;
+  top: 120px;
+  left: 20px;
+}
+
+.profile-info {
+  margin-top: 80px;
+  padding: 0 20px;
+}
+
+.username {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.handle {
+  color: #8b98a5;
+}
+
+.meta {
+  color: #8b98a5;
+  font-size: 15px;
+}
+
+.follow-count {
+  font-size: 15px;
+}
+
+.follow-count span {
+  color: #8b98a5;
+}
+
+.edit-btn {
+  position: absolute;
+  top: 220px;
+  right: 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #536471;
+  border-radius: 9999px;
+  padding: 5px 16px;
+  font-weight: 600;
+}
+
+.edit-btn:hover {
+  background-color: rgba(239, 243, 244, 0.1);
+}
+
+/* Header line (optional, like “Lolplayer 69 — 0 posts”) */
+.profile-header {
+  position: fixed;
+  top: 60px; /* below topbar */
+  left: 400px; /* align with content */
+  right: 0;
+  background-color: #000;
+  border-bottom: 1px solid #333;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  z-index: 100;
+}
