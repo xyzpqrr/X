@@ -118,6 +118,7 @@ body {
 .username {
   font-weight: 600;
   font-size: 1rem;
+  text-decoration: none;
 }
 
 .handle {

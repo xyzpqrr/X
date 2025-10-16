@@ -227,6 +227,27 @@ body {
     color: #666666;
     font-size: 12px;
 }
+.sizerr {
+    width: 20px;
+    height: 20px;
+    margin-left: 315px;
+}
+
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn:hover {
+    color: gray;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
