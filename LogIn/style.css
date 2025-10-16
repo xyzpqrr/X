@@ -56,12 +56,17 @@ body {
     outline: 0;
 }
 .colour{
+    margin-top: 40px;
     background-color: #fff;
     color: #000000;
 }
 .colour:hover{
     background-color: black;
     color: #fff;
+}
+.sizer{
+    font-size: xxx-large;
+    font-weight: 700;
 }
 .col{
     background-color: #000000;
