@@ -55,26 +55,60 @@ body {
     border-radius: var(--bs-modal-border-radius);
     outline: 0;
 }
-.colour{
+
+.colour {
     background-color: #fff;
     color: #000000;
 }
-.colour:hover{
+
+.colour:hover {
     background-color: black;
     color: #fff;
 }
-.col{
+
+.col {
     background-color: #000000;
     color: #fff;
 }
-.col:hover{
+
+.col:hover {
     background-color: #000000;
     color: white;
 }
-.col:focus{
+
+.col:focus {
     background-color: #000000;
     color: white;
 }
+
+.sizerr {
+    width: 20px;
+    height: 20px;
+    margin-top: -20px;
+    margin-right: 127px;
+}
+
+.fl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn:hover {
+    color: gray;
+}
+
 /* Fade-in animation for modal */
 @keyframes fadeIn {
     from {
